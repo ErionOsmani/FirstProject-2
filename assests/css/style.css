@@ -1,0 +1,191 @@
+
+:root {
+    --body-background: black ;
+    --letter-color : white;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    font-size: 25px;
+    width: 100%;
+    height: 77px;
+    border-bottom: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255,0,0);
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 97%); 
+}
+
+    header nav ul li ul{
+        display:none;
+        }
+
+header ul li{
+    padding: 0 50px;
+}
+header nav ul{
+        padding-right: 600px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+header nav a:hover{
+    border-bottom: 2px solid red;
+}
+header nav li.submenu1 a::after{
+    content: "&rarr";
+}
+a{
+    color: white;
+}
+h1{
+    color: white;
+}
+h2{
+    color:white
+}
+h4{
+    color:white
+}
+p{
+    color: white;
+}
+li{
+    color: white;
+}
+body{
+    background-color: var(--body-background);
+}
+
+
+/*main*/
+
+
+main{
+    text-align: center;
+    height: calc(100vh - 78px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Ibarra Real Nova', serif; 
+}
+
+main .ab-rs7 {
+    align-items: center;
+    height: calc(100vh- 78px);
+    font-size: 30px;
+}
+.audi-rs7-txt{
+    margin-top: 300px;
+}
+
+
+
+/*A8 seciton*/
+
+.a8{
+    height:70%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr ,3fr;
+    background-color: rgb(195,34,186);
+    background: linear-gradient(0deg, rgba(195,34,186,1) 0%, rgba(201,4,4,1) 100%);
+
+}
+.paragraph-of-a8{
+    font-size: 40px;
+}
+
+.price-a8{
+    font-size: 20px;
+}
+
+.rs7-section{
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #cf233d;
+    align-items: center;
+}
+.rs7-picture{
+    padding-bottom: 70px;
+    padding-right: 70px;
+}
+.rs7-fact{
+    font-size: 50px;
+}
+
+
+/* info-section */
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    font-size: 30px;
+    margin: 20px;
+    margin-top: 20px;
+}
+.img-a8-info{
+    padding-left: 150px;
+}
+
+.text-info{
+    padding-left: 40px;
+}
+
+.info2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.Grill-a8{
+    padding-left:80px;
+}
+.headlight-a8{
+    padding-left: 20px;
+}
+.info2-txt  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    font-size: 25px;
+    margin-top:20px;
+    margin-bottom:70px;
+}
+.grill-a8-txt{
+    padding-left: 80px;
+}
+
+/* footer */
+
+
+.cointeiner{
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:50px;
+    font-size: 20px;
+}
+ul li{
+    list-style: none;
+}
+.AUDI-AG{
+    /* margin-right: 70px; */
+}
+.copyrite{
+    margin-bottom: 30px;
+    color: white;
+    padding-left: 100px;
+}
+
+@media sm {
+    
+}
