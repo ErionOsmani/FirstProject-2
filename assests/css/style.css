@@ -28,7 +28,7 @@ header ul li{
     padding: 0 50px;
 }
 header nav ul{
-        padding-right: 600px;
+        padding-right: 900px;
         list-style-type: none;
         display: flex;
         justify-content: space-around;
@@ -69,7 +69,7 @@ body{
 
 main{
     text-align: center;
-    height: calc(100vh - 78px);
+    height: calc(100vh - 77px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-family: 'Ibarra Real Nova', serif; 
@@ -77,7 +77,7 @@ main{
 
 main .ab-rs7 {
     align-items: center;
-    height: calc(100vh- 78px);
+    height: calc(100vh- 77px);
     font-size: 30px;
 }
 .audi-rs7-txt{
@@ -89,6 +89,7 @@ main .ab-rs7 {
 /*A8 seciton*/
 
 .a8{
+    padding-left: 60px;
     height:70%;
     align-items: center;
     display: grid;
@@ -99,11 +100,14 @@ main .ab-rs7 {
 
 }
 .paragraph-of-a8{
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .price-a8{
-    font-size: 20px;
+    font-size: 30px;
+}
+.pha8{
+    font-size: 35px;
 }
 
 .rs7-section{
@@ -120,6 +124,9 @@ main .ab-rs7 {
 .rs7-fact{
     font-size: 50px;
 }
+.title-rs7{
+    font-size: 60px;
+}
 
 
 /* info-section */
@@ -133,6 +140,7 @@ main .ab-rs7 {
     margin-top: 20px;
 }
 .img-a8-info{
+    font-size: 80px;
     padding-left: 150px;
 }
 
@@ -160,32 +168,35 @@ main .ab-rs7 {
     margin-bottom:70px;
 }
 .grill-a8-txt{
+    font-size: 35px;
     padding-left: 80px;
+}
+.headlight-a8-txt{
+    font-size: 34px;
 }
 
 /* footer */
 
 
 .cointeiner{
+    margin-top: 10px;
     border-top: 1px solid white;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom:50px;
-    font-size: 20px;
+    font-size: 30px;
 }
 ul li{
     list-style: none;
 }
 .AUDI-AG{
-    /* margin-right: 70px; */
+    margin-right: 70px; 
 }
 .copyrite{
     margin-bottom: 30px;
     color: white;
     padding-left: 100px;
+    font-size:20 ;
 }
 
-@media sm {
-    
-}
