@@ -8,6 +8,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+/* Small devices */
+@media (max-width:640px){
 header{
     font-size: 25px;
     width: 100%;
@@ -34,7 +37,9 @@ header nav ul{
         justify-content: space-around;
         align-items: center;
     }
-
+header nav{
+    display: none;
+}
 header nav a:hover{
     border-bottom: 2px solid red;
 }
@@ -62,16 +67,19 @@ li{
 body{
     background-color: var(--body-background);
 }
-
+.logo{
+    padding-left: 220px;
+}
 
 /*main*/
+
 
 
 main{
     text-align: center;
     height: calc(100vh - 78px);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:1fr;
     font-family: 'Ibarra Real Nova', serif; 
 }
 
@@ -82,6 +90,11 @@ main .ab-rs7 {
 }
 .audi-rs7-txt{
     margin-top: 300px;
+    padding-bottom: 200px;
+}
+.rs7{
+    height: 300px;
+    width: 20px;
 }
 
 
@@ -93,11 +106,18 @@ main .ab-rs7 {
     height:70%;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr ,3fr;
     background-color: rgb(195,34,186);
     background: linear-gradient(0deg, rgba(195,34,186,1) 0%, rgba(201,4,4,1) 100%);
-
+}
+.a8-background-picture{
+    width:500px;
+    padding-left: 30px;
+}
+.All-new-a8{
+    font-size: 20px;
+    padding-left: 15px;
 }
 .paragraph-of-a8{
     font-size: 40px;
@@ -106,42 +126,53 @@ main .ab-rs7 {
 .price-a8{
     font-size: 20px;
 }
-/* .pha8{
-    font-size: 35px;
-} */
+.pha8{
+    font-size: 20px;
+} 
+
+/* rs7 */
 
 .rs7-section{
-    padding-left: 50px;
+    /* padding-left: 50px; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     background-color: #cf233d;
     align-items: center;
 }
 .rs7-picture{
-    padding-bottom: 70px;
-    padding-right: 70px;
+    padding-bottom: 30px; 
+    padding-right: 100px; 
+    height:500px;
 }
 .rs7-fact{
-    font-size: 50px;
+    font-size: 20px;
+    align-items: center;
+    font-size: 30px;
+    padding-bottom: 25px;
 }
-/* .title-rs7{
-    font-size: 60px;
-} */
+.title-rs7{
+    font-size: 30px;
+} 
+.rs7-title{
+    padding-left: 150px;
+}
 
 
 /* info-section */
 
 .info{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     margin: 20px;
     margin-top: 20px;
+
 }
-.img-a8-info{
+.img-a8{
     /* font-size: 80px; */
-    padding-left: 150px;
+    /* padding-left: 150px; */
+    margin: auto;
 }
 
 .text-info{
@@ -150,18 +181,28 @@ main .ab-rs7 {
 
 .info2{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:1fr;
     align-items: center;
 }
 .Grill-a8{
-    padding-left:80px;
+    /* padding-left:80px; */
+    height: 270px;
+    margin: auto;
 }
 .headlight-a8{
     padding-left: 20px;
+    height: 270px;
+    margin: auto;
+    padding-top: 10px;
+}
+.wheel-a8{
+    height: 270px; 
+    margin: auto;
+    padding-top: 10px;
 }
 .info2-txt  {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:1fr;
     align-items: center;
     font-size: 25px;
     margin-top:20px;
@@ -170,10 +211,17 @@ main .ab-rs7 {
 .grill-a8-txt{
     /* font-size: 35px; */
     padding-left: 80px;
+    /* margin: auto; */
+    padding-right: 20px;
 }
-/* .headlight-a8-txt{
-    font-size: 34px;
-} */
+.headlight-a8-txt{
+    padding-top: 15px;
+    padding-left: 1000px;
+}
+.wheel-a8-txt{
+    padding-top: 15px;
+    padding-left: 80px;
+}
 
 /* footer */
 
@@ -187,16 +235,436 @@ main .ab-rs7 {
     margin-bottom:50px;
     font-size: 20px;
 }
+.Topics{
+    padding-top: 30px;
+}
 ul li{
     list-style: none;
 }
 /* .AUDI-AG{
     margin-right: 70px; 
 } */
+
 .copyrite{
     margin-bottom: 30px;
     color: white;
     padding-left: 100px;
     /* font-size:20 ; */
 }
+}
 
+/* Medium devices */
+@media (min-width:640px){
+    header{
+        font-size: 25px;
+        width: 100%;
+        height: 77px;
+        border-bottom: 0px solid red;
+        display: flex;
+        align-items: center;
+        background: rgb(255,0,0);
+        background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 97%); 
+    }
+        .logo{
+            margin: auto;
+            padding-right:200px;
+        }
+        header nav{
+            display: none;
+        }
+    a{
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    h2{
+        color:white
+    }
+    h4{
+        color:white
+    }
+    p{
+        color: white;
+    }
+    li{
+        color: white;
+    }
+    body{
+        background-color: var(--body-background);
+    }
+    
+    /*main*/
+    
+    main{
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr;
+        font-family: 'Ibarra Real Nova', serif; 
+        grid-column-start:1;
+    }
+    
+    main .ab-rs7 {
+        padding-right:800px;
+        height: calc(100vh- 78px);
+        font-size:30px;
+        margin-bottom: 20px;
+    }
+    .audi-rs7-txt{
+        margin-top:0px;
+        margin-bottom: 20px;
+    }
+    .rs7-pic-main{
+        height:820px;
+    }
+    .rs7{
+        height: 460px;
+    }
+
+    /*A8 seciton*/
+    
+    .a8{
+        height:50%;
+        margin: auto;
+        align-items: center;
+        display: grid;
+        padding-left: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgb(195,34,186);
+        background: linear-gradient(0deg, rgba(195,34,186,1) 0%, rgba(201,4,4,1) 100%);
+    }
+    .a8-background-picture{
+        width: 500px;
+    }
+    .paragraph-of-a8{
+        font-size:1px;
+    }
+    
+    .price-a8{
+        font-size: 20px;
+    }
+    .pha8{
+        font-size: 20px;
+    }
+
+    /* rs7-section */
+
+    .rs7-title{
+        padding-right: 150px;
+    }
+    .rs7-section{
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #cf233d;
+        align-items: center;
+    }
+    .rs7-picture{
+        padding-bottom: 70px;
+        padding-right: 70px;
+    }
+    .rs7-fact{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    
+    /* info-section */
+    
+    .info{
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        font-size: 30px;
+        margin: 20px;
+        /* margin-top: 20px; */
+    }
+    .img-a8-info{
+        margin: auto;
+        /* font-size: 80px; */
+        /* padding-left: 150px; */
+    }
+    
+    .text-info{
+        margin: auto;
+        padding-right:10px;
+        font-size:25px;
+    }
+    .img-a8{
+        margin: auto;
+        height: auto;
+        height: 300px;
+    }
+    .wheel-a8{
+        margin:auto;
+        margin-top: 10px;
+        height: 300px;
+    }
+    .headlight-a8-txt{
+        margin: auto;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding-left: 180px;
+    }
+    .info2{
+        margin: auto;
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+    }
+    .Grill-a8{
+        margin: auto;
+        padding-left:80px;
+        height: 250px;
+        margin-top: 10px;
+        padding-left: 15px;
+        height: 300px;
+    }
+    .headlight-a8{
+        margin: auto;
+        margin-top: 10px;
+        margin-top: 20px;
+        padding-left: 20px;
+        height: 300px;
+    }
+    .wheel-a8-txt{
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 30px;
+    }
+
+    .info2-txt  {
+        margin: auto;
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        font-size: 25px;
+        margin-top:20px;
+        margin-bottom:70px;
+    }
+    .grill-a8-txt{
+        margin: auto;
+        /* font-size: 35px; */
+        padding-right:10px;
+    }
+    
+    
+    /* footer */
+    
+    
+    .cointeiner{
+        /* margin-top: 10px; */
+        border-top: 1px solid white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom:50px;
+        font-size: 20px;
+    }
+    ul li{
+        list-style: none;
+    }
+    /* .AUDI-AG{
+        margin-right: 70px; 
+    } */
+    .copyrite{
+        margin-bottom: 30px;
+        color: white;
+        padding-left: 100px;
+        /* font-size:20 ; */
+    }
+}
+
+/* Large devices */
+@media (min-width:1120px){
+    header{
+        font-size: 25px;
+        width: 100%;
+        height: 77px;
+        border-bottom: 0px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(255,0,0);
+        background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 97%); 
+    }
+    
+        header nav ul li ul{
+            display:none;
+            }
+    
+    header ul li{
+        padding: 0 50px;
+    }
+    header nav ul{
+            padding-right: 600px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+    header nav a:hover{
+        border-bottom: 2px solid red;
+    }
+    header nav li.submenu1 a::after{
+        content: "&rarr";
+    }
+    a{
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    h2{
+        color:white
+    }
+    h4{
+        color:white
+    }
+    p{
+        color: white;
+    }
+    li{
+        color: white;
+    }
+    body{
+        background-color: var(--body-background);
+    }
+    
+    
+    /*main*/
+    
+    
+    
+    main{
+        text-align: center;
+        height: calc(100vh - 78px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: 'Ibarra Real Nova', serif; 
+    }
+    
+    main .ab-rs7 {
+        align-items: center;
+        height: calc(100vh- 78px);
+        font-size: 30px;
+    }
+    .audi-rs7-txt{
+        margin-top: 300px;
+    }
+    
+    
+    
+    /*A8 seciton*/
+    
+    .a8{
+        /* padding-left: 60px; */
+        height:70%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr ,3fr;
+        background-color: rgb(195,34,186);
+        background: linear-gradient(0deg, rgba(195,34,186,1) 0%, rgba(201,4,4,1) 100%);
+    
+    }
+    .paragraph-of-a8{
+        font-size: 40px;
+    }
+    
+    .price-a8{
+        font-size: 20px;
+    }
+    /* .pha8{
+        font-size: 35px;
+    } */
+    
+    .rs7-section{
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #cf233d;
+        align-items: center;
+    }
+    .rs7-picture{
+        padding-bottom: 70px;
+        padding-right: 70px;
+    }
+    .rs7-fact{
+        font-size: 50px;
+    }
+    /* .title-rs7{
+        font-size: 60px;
+    } */
+    
+    
+    /* info-section */
+    
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        font-size: 30px;
+        margin: 20px;
+        margin-top: 20px;
+    }
+    .img-a8-info{
+        /* font-size: 80px; */
+        padding-left: 150px;
+    }
+    
+    .text-info{
+        padding-left: 40px;
+    }
+    
+    .info2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+    .Grill-a8{
+        padding-left:80px;
+    }
+    .headlight-a8{
+        padding-left: 20px;
+    }
+    .info2-txt  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-size: 25px;
+        margin-top:20px;
+        margin-bottom:70px;
+    }
+    .grill-a8-txt{
+        /* font-size: 35px; */
+        padding-left: 80px;
+    }
+    
+    
+    /* footer */
+    
+    
+    .cointeiner{
+        /* margin-top: 10px; */
+        border-top: 1px solid white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom:50px;
+        font-size: 20px;
+    }
+    ul li{
+        list-style: none;
+    }
+    /* .AUDI-AG{
+        margin-right: 70px; 
+    } */
+    .copyrite{
+        margin-bottom: 30px;
+        color: white;
+        padding-left: 100px;
+        /* font-size:20 ; */
+    }
+}
