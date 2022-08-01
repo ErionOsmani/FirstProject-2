@@ -7,7 +7,9 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    
 }
+
 
 /* Small devices */
 @media (max-width:640px){
@@ -324,7 +326,7 @@ ul li{
     /*A8 seciton*/
     
     .a8{
-        height:50%;
+        height:65%;
         margin: auto;
         align-items: center;
         display: grid;
@@ -338,7 +340,7 @@ ul li{
         width: 500px;
     }
     .paragraph-of-a8{
-        font-size:1px;
+        font-size:25px;
     }
     
     .price-a8{
@@ -477,6 +479,9 @@ ul li{
 
 /* Large devices */
 @media (min-width:1120px){
+    body{
+        overflow-x:hidden ;
+    }
     header{
         font-size: 25px;
         width: 100%;
@@ -546,28 +551,29 @@ ul li{
     }
     
     main .ab-rs7 {
-        align-items: center;
+        padding-left: 150px;
         height: calc(100vh- 78px);
         font-size: 30px;
     }
     .audi-rs7-txt{
-        margin-top: 300px;
+        text-align: center;
+        margin-top: 200px; 
     }
-    
-    
     
     /*A8 seciton*/
     
     .a8{
         /* padding-left: 60px; */
-        height:70%;
+        height:80%;
         align-items: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr ,3fr;
         background-color: rgb(195,34,186);
         background: linear-gradient(0deg, rgba(195,34,186,1) 0%, rgba(201,4,4,1) 100%);
-    
+    }
+    .img-a8{
+        width: 900px;
     }
     .paragraph-of-a8{
         font-size: 40px;
