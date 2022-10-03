@@ -107,9 +107,11 @@ main .ab-rs7 {
     /* padding-left: 60px; */
     height:70%;
     align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr ,3fr;
+    display: flex !important; 
+    flex-direction: column; 
+    /* display: grid;
+    gird-template-columns:repeat(2,1fr); */
+    /* grid-template-rows: */
     background-color: rgb(195,34,186);
     background: linear-gradient(0deg, rgba(195,34,186,1) 0%, rgba(201,4,4,1) 100%);
 }
@@ -131,6 +133,9 @@ main .ab-rs7 {
 .pha8{
     font-size: 20px;
 } 
+.dotdot span{
+    display: none;
+}
 
 /* rs7 */
 
