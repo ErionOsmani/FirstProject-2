@@ -5,42 +5,36 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Audi New Cars Showcase</title>
         <link rel="stylesheet" href=".//assests/css/style.css" />
+    <script src="./assests/script/main.js"></script>
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-let i;
-let slides = document.getElementsByClassName("mySlides");
-let dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-}
-</script>
-    
-
+    <script>
+        window.addEventListener("load", function(){
+                setTimeout(
+                    function open(event){
+                        document.querySelector(".popup").style.display = "block";
+                    },
+                1000
+                )
+            });
+            
+            
+            document.querySelector("#close").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none";
+            });
+            </script> 
+            
 
     </head>
 <body>
+    
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>This Is The Title</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
+        </p>
+        <a href="#">Let's Go</a>
+    </div>
     <header>
         <div class="logo"><img src="./assests/img/Logo-audi-vector-transparent-PNG.png" alt="Audi Logo" height="60px"></div>
         <nav>
@@ -97,7 +91,6 @@ dots[slideIndex-1].className += " active";
     </main> 
     <div class="a8">
         <div class="slideshow-container" style="width: 100%">
-
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
             <img src="./assests/img/Audi a8 Transparent Background.png" style="width:100%">
@@ -153,7 +146,7 @@ dots[slideIndex-1].className += " active";
     <div class="video">
         <video controls autoplay loop src="./assests/vid/2019-Audi-A8-s1-model-intro-01-vid-desktop-v2.mp4" muted width="100%"></video>
     </div>
-    <div class="rs7-section">
+    <div class="rs7-section">e
         <h1 class="rs7-title">Lead By Technology</h1>
         <div class="rs7-picture">
             <img src="./assests/img/audi-rs7-transparent.png" alt="rs7" height="400px">
@@ -165,6 +158,7 @@ dots[slideIndex-1].className += " active";
                 The Audi RS7 is poised to take over the sport class.
         </p>
     </div>
+
     </div>
     <div class="info">
         <h4 class="text-info">
